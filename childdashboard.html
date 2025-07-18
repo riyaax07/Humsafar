@@ -1,0 +1,211 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Dashboard
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-[#12161E] text-white min-h-screen flex justify-center items-start p-4">
+  <div class="flex max-w-5xl w-full rounded-2xl overflow-hidden">
+   <!-- Sidebar -->
+   <aside class="bg-[#1B1F29] w-56 flex flex-col rounded-l-2xl p-6 space-y-8">
+    <div class="flex items-center space-x-3">
+     <img alt="Profile picture of Mom's Home user, a woman with dark hair and light skin" class="rounded-full w-8 h-8 object-cover" height="32" src="https://storage.googleapis.com/a1aa/image/3806a64a-fadc-4fb3-4839-aa7c6e0b04af.jpg" width="32"/>
+     <div>
+      <p class="text-sm font-semibold text-white">
+       Mom's Home
+      </p>
+      <p class="text-xs text-gray-400">
+       Connected since 2022
+      </p>
+     </div>
+    </div>
+    <nav class="flex flex-col space-y-4 text-xs font-semibold text-gray-300">
+     <a aria-current="page" class="flex items-center space-x-3 bg-[#2C3140] rounded-md px-3 py-2 text-white" href="#">
+      <i class="fas fa-home text-sm">
+      </i>
+      <span>
+       Dashboard
+      </span>
+     </a>
+     <a class="flex items-center space-x-3 hover:text-white transition-colors duration-200" href="#">
+      <i class="fas fa-chart-line text-sm">
+      </i>
+      <span>
+       Activity
+      </span>
+     </a>
+     <a class="flex items-center space-x-3 hover:text-white transition-colors duration-200" href="#">
+      <i class="fas fa-phone-alt text-sm">
+      </i>
+      <span>
+       Calls
+      </span>
+     </a>
+     <a class="flex items-center space-x-3 hover:text-white transition-colors duration-200" href="#">
+      <i class="fas fa-shopping-cart text-sm">
+      </i>
+      <span>
+       Groceries
+      </span>
+     </a>
+     <a class="flex items-center space-x-3 hover:text-white transition-colors duration-200" href="#">
+      <i class="fas fa-cog text-sm">
+      </i>
+      <span>
+       Settings
+      </span>
+     </a>
+    </nav>
+   </aside>
+   <!-- Main content -->
+   <main class="bg-[#12161E] flex-1 p-8 rounded-r-2xl flex flex-col justify-between min-h-[600px]">
+    <div>
+     <h1 class="text-white font-bold text-xl mb-1">
+      Dashboard
+     </h1>
+     <p class="text-gray-400 text-sm mb-8 max-w-xl">
+      Stay connected and informed about your loved one’s well-being.
+     </p>
+     <!-- Daily Check-in -->
+     <section class="mb-8">
+      <h2 class="text-white font-semibold text-lg mb-4">
+       Daily Check-in
+      </h2>
+      <div class="flex items-center space-x-4">
+       <div class="bg-[#2C3140] rounded-md w-10 h-10 flex items-center justify-center text-gray-400 text-lg">
+        <i class="far fa-smile">
+        </i>
+       </div>
+       <div>
+        <p class="text-white font-semibold text-sm">
+         Mom is doing well
+        </p>
+        <p class="text-gray-500 text-xs">
+         Last check-in: 2 hours ago
+        </p>
+       </div>
+      </div>
+     </section>
+     <!-- Activity Timeline -->
+     <section class="mb-8">
+      <h2 class="text-white font-semibold text-lg mb-4">
+       Activity Timeline
+      </h2>
+      <div class="flex flex-col space-y-4 relative pl-10">
+       <!-- Vertical line -->
+       <div class="absolute top-5 left-6 h-full border-l border-gray-700">
+       </div>
+       <div class="flex items-center space-x-3 z-10">
+        <div class="text-gray-400 text-lg w-6 flex justify-center">
+         <i class="fas fa-walking">
+         </i>
+        </div>
+        <div>
+         <p class="text-white font-semibold text-sm">
+          Morning Walk
+         </p>
+         <p class="text-gray-500 text-xs">
+          8:00 AM
+         </p>
+        </div>
+       </div>
+       <div class="flex items-center space-x-3 z-10">
+        <div class="text-gray-400 text-lg w-6 flex justify-center">
+         <i class="fas fa-shopping-cart">
+         </i>
+        </div>
+        <div>
+         <p class="text-white font-semibold text-sm">
+          Grocery Shopping
+         </p>
+         <p class="text-gray-500 text-xs">
+          10:30 AM
+         </p>
+        </div>
+       </div>
+       <div class="flex items-center space-x-3 z-10">
+        <div class="text-gray-400 text-lg w-6 flex justify-center">
+         <i class="fas fa-video">
+         </i>
+        </div>
+        <div>
+         <p class="text-white font-semibold text-sm">
+          Video Call with Family
+         </p>
+         <p class="text-gray-500 text-xs">
+          2:00 PM
+         </p>
+        </div>
+       </div>
+      </div>
+     </section>
+     <!-- Call & Chat -->
+     <section class="mb-8 flex justify-between items-center max-w-xl">
+      <div>
+       <h2 class="text-white font-semibold text-lg mb-2">
+        Call &amp; Chat
+       </h2>
+       <button class="bg-[#1E6FFF] text-white text-xs font-semibold rounded-md px-4 py-1 shadow-md hover:bg-[#155fcc] transition-colors duration-200" type="button">
+        Call Now
+       </button>
+      </div>
+      <button class="bg-[#2C3140] text-gray-400 text-xs font-semibold rounded-md px-4 py-1 shadow-md hover:bg-[#3a3f52] transition-colors duration-200" type="button">
+       Chat
+      </button>
+     </section>
+     <!-- Grocery Snapshot -->
+     <section class="mb-8 max-w-xl">
+      <h2 class="text-white font-semibold text-lg mb-4">
+       Grocery Snapshot
+      </h2>
+      <div class="flex items-center space-x-4">
+       <div class="bg-[#2C3140] rounded-md w-10 h-10 flex items-center justify-center text-gray-400 text-lg">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </div>
+       <div>
+        <p class="text-white font-semibold text-sm">
+         Milk, Bread, Eggs
+        </p>
+        <p class="text-gray-500 text-xs">
+         Last updated: Today, 11:00 AM
+        </p>
+       </div>
+      </div>
+     </section>
+     <!-- SOS Alert -->
+     <section class="mb-8 max-w-xl">
+      <h2 class="text-white font-semibold text-lg mb-4">
+       SOS Alert
+      </h2>
+     </section>
+    </div>
+    <!-- Emergency Alert footer -->
+    <footer class="flex justify-between items-center max-w-xl mt-12">
+     <div>
+      <h3 class="text-white font-semibold text-base mb-1">
+       Emergency Alert
+      </h3>
+      <p class="text-gray-400 text-sm max-w-xs">
+       In case of emergency, your loved one can trigger an SOS alert.
+      </p>
+     </div>
+     <button class="bg-[#1E6FFF] text-white text-xs font-semibold rounded-md px-4 py-2 shadow-md hover:bg-[#155fcc] transition-colors duration-200" type="button">
+      View Details
+     </button>
+    </footer>
+   </main>
+  </div>
+ </body>
+</html>
